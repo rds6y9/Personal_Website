@@ -1,0 +1,65 @@
+@font-face {
+  src: url(../fonts/kelson/Kelson_Sans_Regular.otf);
+  font-family: KelsonRegular; }
+* {
+  font-family: KelsonRegular; }
+
+html {
+  min-width: 330px; }
+
+#header {
+  position: fixed;
+  width: 100%;
+  min-width: 330px;
+  height: 60px;
+  text-align: center;
+  background-color: #CCCCCC; }
+  #header h1 {
+    display: inline-block;
+    line-height: 60px;
+    font-size: 1.5em; }
+  #header #full-nav {
+    display: none;
+    position: absolute;
+    right: 20px; }
+    #header #full-nav ul {
+      line-height: 60px;
+      list-style-type: none; }
+      #header #full-nav ul li {
+        display: inline-block; }
+        #header #full-nav ul li a {
+          text-decoration: none;
+          color: black;
+          padding: 22px 10px;
+          margin: 0 5px; }
+  #header #dropdown-nav-button {
+    display: inline-block;
+    position: absolute;
+    height: 60px;
+    left: 20px; }
+    #header #dropdown-nav-button .tri-bar {
+      width: 25px;
+      height: 2px;
+      margin-top: 5px;
+      background-color: black; }
+    #header #dropdown-nav-button .tri-bar:first-child {
+      margin-top: 20px; }
+  #header #dropdown-nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    min-width: 330px;
+    height: 300px;
+    background-color: black; }
+
+#introduction {
+  width: 100%;
+  height: 400px;
+  padding-top: 60px; }
+  #introduction h1 {
+    text-align: center;
+    font-size: 4em; }
+
+/*# sourceMappingURL=home.css.map */

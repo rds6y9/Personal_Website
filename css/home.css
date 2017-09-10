@@ -1,65 +1,200 @@
 @font-face {
   src: url(../fonts/kelson/Kelson_Sans_Regular.otf);
   font-family: KelsonRegular; }
+@font-face {
+  src: url(../fonts/raleway/Raleway-Light.ttf);
+  font-family: Raleway-Light; }
+@font-face {
+  src: url(../fonts/raleway/Raleway-Medium.ttf);
+  font-family: Raleway-Medium; }
+@font-face {
+  src: url(../fonts/oxygen/Oxygen-Light.ttf);
+  font-family: Oxygen-Light; }
+@font-face {
+  src: url(../fonts/Steinerlight.ttf);
+  font-family: Steiner; }
 * {
-  font-family: KelsonRegular; }
+  color: white;
+  font-family: Raleway-Medium; }
+
+h1 {
+  font-family: Steiner, Sans-Serif; }
 
 html {
   min-width: 330px; }
 
 #header {
+  display: none;
   position: fixed;
   width: 100%;
   min-width: 330px;
-  height: 60px;
+  height: 70px;
   text-align: center;
-  background-color: #CCCCCC; }
+  background-color: #2E2B26;
+  z-index: 9001;
+  /* Firefox < 16 */
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */ }
   #header h1 {
     display: inline-block;
-    line-height: 60px;
+    line-height: 70px;
+    color: white;
     font-size: 1.5em; }
-  #header #full-nav {
-    display: none;
-    position: absolute;
-    right: 20px; }
-    #header #full-nav ul {
-      line-height: 60px;
-      list-style-type: none; }
-      #header #full-nav ul li {
-        display: inline-block; }
-        #header #full-nav ul li a {
-          text-decoration: none;
-          color: black;
-          padding: 22px 10px;
-          margin: 0 5px; }
+  #header .extended-nav {
+    display: none; }
   #header #dropdown-nav-button {
+    cursor: pointer;
     display: inline-block;
     position: absolute;
-    height: 60px;
+    height: 70px;
     left: 20px; }
     #header #dropdown-nav-button .tri-bar {
       width: 25px;
       height: 2px;
       margin-top: 5px;
-      background-color: black; }
+      background-color: white; }
     #header #dropdown-nav-button .tri-bar:first-child {
-      margin-top: 20px; }
+      margin-top: 23.33333px; }
+    #header #dropdown-nav-button .tri-bar:nth-child(3) {
+      margin-top: -2px; }
   #header #dropdown-nav-menu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     width: 100%;
     min-width: 330px;
-    height: 300px;
-    background-color: black; }
+    min-height: 100px;
+    background-color: #2E2B26;
+    border-top: 2px solid #4C31F7; }
+    #header #dropdown-nav-menu #menu-items {
+      list-style-type: none; }
+      #header #dropdown-nav-menu #menu-items li a {
+        display: block;
+        padding: 20px 0px;
+        text-decoration: none;
+        transition: font-size .2s ease-in-out; }
+      #header #dropdown-nav-menu #menu-items li a:hover {
+        background-color: #4C31F7;
+        font-size: 1.2em; }
+      #header #dropdown-nav-menu #menu-items li a:focus {
+        outline: none; }
+  #header .menu-shown {
+    -webkit-animation: fadein .3s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein .3s;
+    /* Firefox < 16 */
+    -ms-animation: fadein .3s;
+    /* Internet Explorer */
+    -o-animation: fadein .3s;
+    /* Opera < 12.1 */
+    animation: fadein .3s; }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  #header #firstbar, #header #thirdbar {
+    transition: opacity .3s ease-in-out; }
+  #header #middlebar, #header #crossbar {
+    transition: transform .3s ease-in-out; }
+  #header .menu-active #firstbar {
+    opacity: 0; }
+  #header .menu-active #middlebar {
+    transform: rotate(45deg); }
+  #header .menu-active #thirdbar {
+    opacity: 0; }
+  #header .menu-active #crossbar {
+    transform: rotate(135deg); }
 
 #introduction {
   width: 100%;
-  height: 400px;
-  padding-top: 60px; }
+  height: 100vh;
+  background: linear-gradient(rgba(76, 49, 247, 0.3), rgba(162, 57, 202, 0.3)), url(../img/stl_cityscape.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
   #introduction h1 {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
     text-align: center;
-    font-size: 4em; }
+    font-size: 3em; }
+  #introduction #personal-titles {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center; }
+    #introduction #personal-titles p {
+      font-family: Raleway-Medium, Sans-Serif;
+      font-size: 1.5em; }
+  #introduction .intro-nav {
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    right: 0; }
+    #introduction .intro-nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around; }
+      #introduction .intro-nav ul li {
+        display: inline; }
+        #introduction .intro-nav ul li a {
+          text-decoration: none;
+          line-height: 70px;
+          padding: 25px 0px; }
+
+#about-me {
+  width: 100%;
+  min-height: 6000px; }
+
+@media (min-width: 1000px) {
+  .extended-nav {
+    display: inline-block !important;
+    position: absolute;
+    right: 0;
+    width: 400px;
+    height: 70px; }
+    .extended-nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around; }
+      .extended-nav ul li {
+        display: inline; }
+        .extended-nav ul li a {
+          text-decoration: none;
+          line-height: 70px;
+          padding: 25px 0px; }
+
+  #dropdown-nav-button {
+    display: none !important; } }
 
 /*# sourceMappingURL=home.css.map */

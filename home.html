@@ -5,31 +5,53 @@
 		<title>Ryan Stoughton</title>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<meta charset="UTF-8">
 	</head>
-
+ 
 	<body>
 		<div id="header">
 			<h1>Ryan Stoughton</h1>
-			<div id="full-nav">
-				<ul>
+			<div id="dropdown-nav-button" onclick="showNavMenu()">
+				<div class="tri-bar" id="firstbar"></div>
+				<div class="tri-bar" id="middlebar"></div>
+				<div class="tri-bar" id="crossbar"></div>
+				<div class="tri-bar" id="thirdbar"></div>
+			</div>
+			<div id="dropdown-nav-menu" class="menu-hidden">
+				<ul id="menu-items">
 					<li><a href="#">Introduction</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Connect</a></li>
+					<li><a href="#">Experience</a></li>
+					<li><a href="#">Contact Me</a></li>
 				</ul>
 			</div>
-			<div id="dropdown-nav-button" onclick="showNavMenu()">
-				<div class="tri-bar"></div>
-				<div class="tri-bar"></div>
-				<div class="tri-bar"></div>
-			</div>
-			<div id="dropdown-nav-menu">
+			<div class="extended-nav menu-hidden">
+				<ul id="menu-items">
+					<li><a href="#">Introduction</a></li>
+					<li><a href="#">Experience</a></li>
+					<li><a href="#">Contact Me</a></li>
+				</ul>
 			</div>
 		</div>
 
 		<div id="introduction">
-			<!-- <h1>Ryan Stoughton</h1> -->
+			<h1>Ryan Stoughton</h1>
+			<div id="personal-titles">
+				<p>Web Developer&emsp;Aspiring Software Engineer</p>
+			</div>
+			<div class="intro-nav">
+				<ul id="menu-items">
+					<li><a href="#">Introduction</a></li>
+					<li><a href="#">Experience</a></li>
+					<li><a href="#">Contact Me</a></li>
+				</ul>
+			</div>
 		</div>
-	<script type="text/javascript" src="js/dropdown.js"></script>
+
+		<div id="about-me"></div>
+
+		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
 	</body>
 </html>

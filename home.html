@@ -5,53 +5,190 @@
 		<title>Ryan Stoughton</title>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta charset="UTF-8">
 	</head>
  
 	<body>
+
 		<div id="header">
-			<h1>Ryan Stoughton</h1>
-			<div id="dropdown-nav-button" onclick="showNavMenu()">
-				<div class="tri-bar" id="firstbar"></div>
-				<div class="tri-bar" id="middlebar"></div>
-				<div class="tri-bar" id="crossbar"></div>
-				<div class="tri-bar" id="thirdbar"></div>
-			</div>
-			<div id="dropdown-nav-menu" class="menu-hidden">
-				<ul id="menu-items">
-					<li><a href="#">Introduction</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">Contact Me</a></li>
-				</ul>
-			</div>
-			<div class="extended-nav menu-hidden">
-				<ul id="menu-items">
-					<li><a href="#">Introduction</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">Contact Me</a></li>
-				</ul>
+			<div id="content-wrapper">
+				<div id="profile_pic">
+					<img src="img/spongeboob.jpg" alt="Picture of Ryan Stoughton."/>
+				</div>
+				<div id="descriptors">
+					<h1>Ryan Stoughton</h1>
+					<p>Web Developer | Aspiring Software Engineer | Musician</p>
+					<div id="media-links">
+						<ul>
+							<li><a href="https://github.com/rds6y9" target="_blank" class="fa fa-github"></a></li>
+							<li><a href="https://www.linkedin.com/in/ryan-stoughton-a42a0a122/" target="_blank" class="fa fa-linkedin"></a></li>
+							<li><a href="https://www.facebook.com/ryan.stoughton.7?ref=bookmarks" target="_blank" class="fa fa-facebook"></a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div id="introduction">
-			<h1>Ryan Stoughton</h1>
-			<div id="personal-titles">
-				<p>Web Developer&emsp;Aspiring Software Engineer</p>
+		<div id="portfolio">
+			<div id="about" class="info-card">
+				<div class="info-card-data-wrapper">
+					<h1>Short Bio</h1>
+					<p><br /> I am a Senior studying Computer Science at Missouri S&T. During my time here I have developed a passion for software development and engineering that pushes me to improve everyday. Currently, I practice web development both on a team and in my spare time working on both front-end and back-end. I strive to create attractive and flexible interfaces controlled by concise, efficient code. Someday, I hope to become a software engineer creating better tools for both users and developers.<br /><br />
+					Learning is something that I look forward to everyday. Whether in the classroom, with my peers, or in my free time I am always looking for ways to
+					improve my ability to write cleaner, faster, more versatile code. My hope is that the future continues to bring me to those who motivate me become
+					the best I can be.<br /><br />
+					My life outside of my studies primarily includes spending time with friends and family, playing guitar, or unhealthily binge-watching TV shows. 
+					</p>
+				</div>
 			</div>
-			<div class="intro-nav">
-				<ul id="menu-items">
-					<li><a href="#">Introduction</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">Contact Me</a></li>
-				</ul>
+			<div id="skills" class="info-card">
+				<div id="card-wrapper" class="info-card-data-wrapper">
+					<h1>Skills</h1>
+					<div id="skills-wrapper">
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>Python</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="python-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>HTML / (S)CSS</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="htmlcss-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>C++</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="cpp-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>CLI</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="cli-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>Git</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="git-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>Linux</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="linux-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>Django</p>
+								</div>
+								<div class="skill-level">
+									<p>Intermediate</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="django-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>Java</p>
+								</div>
+								<div class="skill-level">
+									<p>Novice</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="java-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>JavaScript</p>
+								</div>
+								<div class="skill-level">
+									<p>Novice</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="javascript-meter" class="fill-level"></div>
+						</div>
+						<div class="skill">
+							<div class="skill-identifiers">
+								<div class="skill-name">
+									<p>SQL</p>
+								</div>
+								<div class="skill-level">
+									<p>Beginner</p>
+								</div>
+							</div>
+							<div class="skill-meter"></div>
+							<div id="sql-meter" class="fill-level"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="projects-experience" class="info-card">
+				<div class="info-card-data-wrapper">
+					<h1>Projects and Experience</h1>
+				</div>
+			</div>
+			<div id="current" class="info-card">
+				<div class="info-card-data-wrapper">
+					<h1>What Am I Doing Now?</h1>
+				</div>
+			</div>
+			<div id="contact" class="info-card">
+				<div class="info-card-data-wrapper">
+					<h1>Contact Information</h1>
+				</div>
 			</div>
 		</div>
 
-		<div id="about-me"></div>
-
-		
+		<div id="footer">
+			<p>Handcrafted by Ryan Stoughton @ 2017</p>
+		</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/header.js"></script>
-	<script type="text/javascript" src="js/dropdown.js"></script>
 	</body>
 </html>

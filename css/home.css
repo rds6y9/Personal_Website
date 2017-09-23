@@ -20,11 +20,11 @@ html {
     #header #content-wrapper #descriptors {
       padding-top: 20px; }
       #header #content-wrapper #descriptors h1 {
-        font-family: Sans-Serif, serif;
+        font-family: "Ubuntu", sans-serif;
         font-size: 2.5em;
         padding-bottom: 10px; }
       #header #content-wrapper #descriptors p {
-        font-family: Sans-Serif, serif;
+        font-family: "Ubuntu", sans-serif;
         font-size: 1.4em;
         padding-bottom: 10px; }
       #header #content-wrapper #descriptors #media-links {
@@ -146,7 +146,7 @@ html {
   max-width: 100%;
   color: #3d3a3D;
   background-color: #FFFFFC;
-  font-family: Sans-Serif, serif; }
+  font-family: "Ubuntu", sans-serif; }
   .info-card h1 {
     font-size: 1.3em;
     margin-bottom: 10px; }
@@ -160,7 +160,7 @@ html {
   width: 100%;
   height: 40px;
   text-align: center;
-  font-family: Sans-serif, serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 0.9em;
   color: #FFFFFC;
   background-color: #3d3a3D;

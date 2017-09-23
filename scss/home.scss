@@ -10,6 +10,9 @@ $header-breakpoint: 1024px;
 $header-min-height: 300px;
 $footer-height: 40px;
 
+$font-stack: 'Ubuntu', sans-serif;
+
+
 html {
 	background-color: $grey !important;
 }
@@ -38,13 +41,13 @@ html {
 			padding-top: 20px;
 
 			h1 {
-				font-family: Sans-Serif, serif;
+				font-family: $font-stack;
 				font-size: 2.5em;
 				padding-bottom: 10px;
 			}
 
 			p {
-				font-family: Sans-Serif, serif;
+				font-family: $font-stack;
 				font-size: 1.4em;
 				padding-bottom: 10px;
 			}
@@ -232,7 +235,7 @@ html {
 	max-width: 100%;
 	color: $black;
 	background-color: $white;
-	font-family: Sans-Serif, serif;
+	font-family: $font-stack;
 
 	h1 {
 		font-size: 1.3em;
@@ -252,7 +255,7 @@ html {
 	width: 100%;
 	height: $footer-height;
 	text-align: center;
-	font-family: Sans-serif, serif;
+	font-family: $font-stack;
 	font-size: 0.9em;
 	color: $white;
 	background-color: $black;

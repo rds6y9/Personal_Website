@@ -7,14 +7,15 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
- 
+
 	<body>
 
 		<div id="header">
 			<div id="content-wrapper">
 				<div id="profile_pic">
-					<img src="img/spongeboob.jpg" alt="Picture of Ryan Stoughton."/>
+					<img src="img/fb_profile_pic.jpg" alt="Picture of Ryan Stoughton."/>
 				</div>
 				<div id="descriptors">
 					<h1>Ryan Stoughton</h1>
@@ -24,21 +25,23 @@
 							<li><a href="https://github.com/rds6y9" target="_blank" class="fa fa-github"></a></li>
 							<li><a href="https://www.linkedin.com/in/ryan-stoughton-a42a0a122/" target="_blank" class="fa fa-linkedin"></a></li>
 							<li><a href="https://www.facebook.com/ryan.stoughton.7?ref=bookmarks" target="_blank" class="fa fa-facebook"></a></li>
+							<li><a href="files/Ryan_Stoughton_Resume.pdf" target="_blank" class="fa fa-file-o"></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="portfolio">
+		<div class="portfolio">
+			<div class="main-well-wrapper">
 			<div id="about" class="info-card">
 				<div class="info-card-data-wrapper">
 					<h1>Short Bio</h1>
-					<p><br /> I am a Senior studying Computer Science at Missouri S&T. During my time here I have developed a passion for software development and engineering that pushes me to improve everyday. Currently, I practice web development both on a team and in my spare time working on both front-end and back-end. I strive to create attractive and flexible interfaces controlled by concise, efficient code. Someday, I hope to become a software engineer creating better tools for both users and developers.<br /><br />
+					<p><br /> I am a Junior studying Computer Science at Missouri S&T. During my time here I have developed a passion for software development and engineering that pushes me to improve everyday. Currently, I practice web development both on a team and in my spare time working on both front-end and back-end. I strive to create attractive and flexible interfaces controlled by concise, efficient code. Someday, I hope to become a software engineer creating better tools for both users and developers.<br /><br />
 					Learning is something that I look forward to everyday. Whether in the classroom, with my peers, or in my free time I am always looking for ways to
 					improve my ability to write cleaner, faster, more versatile code. My hope is that the future continues to bring me to those who motivate me become
 					the best I can be.<br /><br />
-					My life outside of my studies primarily includes spending time with friends and family, playing guitar, or unhealthily binge-watching TV shows. 
+					My life outside of my studies primarily includes spending time with friends and family, playing guitar, or unhealthily binge-watching TV shows.
 					</p>
 				</div>
 			</div>
@@ -46,125 +49,46 @@
 				<div id="card-wrapper" class="info-card-data-wrapper">
 					<h1>Skills</h1>
 					<div id="skills-wrapper">
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>Python</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
+						<div class="skill-category">
+							<div class="skill-heading">
+								<h1>Front-End</h1>
 							</div>
-							<div class="skill-meter"></div>
-							<div id="python-meter" class="fill-level"></div>
+							<div class="skill-list">
+								<p>HTML</p>
+								<p>XML</p>
+								<p>CSS</p>
+								<p>Sass</p>
+								<p>Bootstrap</p>
+								<p>JavaScript</p>
+								<p>jQuery</p>
+							</div>
 						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>HTML / (S)CSS</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
+						<div class="skill-category">
+							<div class="skill-heading">
+								<h1>Back-End</h1>
 							</div>
-							<div class="skill-meter"></div>
-							<div id="htmlcss-meter" class="fill-level"></div>
+							<div class="skill-list">
+								<p>Python</p>
+								<p>Django</p>
+								<p>PostgreSQL</p>
+								<p>MySQL</p>
+								<p>Java</p>
+								<p>C++</p>
+							</div>
 						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>C++</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
+						<div class="skill-category">
+							<div class="skill-heading">
+								<h1>Tools</h1>
 							</div>
-							<div class="skill-meter"></div>
-							<div id="cpp-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>CLI</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
+							<div class="skill-list">
+								<p>Git</p>
+								<p>Linux</p>
+								<p>CLI</p>
+								<p>Vagrant</p>
+								<p>Visual Studio</p>
+								<p>Android Studio</p>
+								<p>Test Driven Development</p>
 							</div>
-							<div class="skill-meter"></div>
-							<div id="cli-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>Git</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
-							</div>
-							<div class="skill-meter"></div>
-							<div id="git-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>Linux</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
-							</div>
-							<div class="skill-meter"></div>
-							<div id="linux-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>Django</p>
-								</div>
-								<div class="skill-level">
-									<p>Intermediate</p>
-								</div>
-							</div>
-							<div class="skill-meter"></div>
-							<div id="django-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>Java</p>
-								</div>
-								<div class="skill-level">
-									<p>Novice</p>
-								</div>
-							</div>
-							<div class="skill-meter"></div>
-							<div id="java-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>JavaScript</p>
-								</div>
-								<div class="skill-level">
-									<p>Novice</p>
-								</div>
-							</div>
-							<div class="skill-meter"></div>
-							<div id="javascript-meter" class="fill-level"></div>
-						</div>
-						<div class="skill">
-							<div class="skill-identifiers">
-								<div class="skill-name">
-									<p>SQL</p>
-								</div>
-								<div class="skill-level">
-									<p>Beginner</p>
-								</div>
-							</div>
-							<div class="skill-meter"></div>
-							<div id="sql-meter" class="fill-level"></div>
 						</div>
 					</div>
 				</div>
@@ -173,18 +97,86 @@
 				<div class="info-card-data-wrapper">
 					<h1>Projects and Experience</h1>
 				</div>
+				<div class="project-card">
+					<div class="project-image acm-member"></div>
+					<div class="project-desc">
+						<h1 class="project-title">ACM Member</h1>
+						<p class="project-summary">Member of the Missouri S&T ACM organization. Actively contributing to ACM SIG-DOTCOM as a web developer for the ACM-General website. The website is responsible for keeping
+																			 members up to date on current events, displaying information about our sponsors, officers, and SIGs, handling member dues, and much more! Throughout the project we have utilized
+																			 several front and back-end technologies to ensure a responsive, reliable, and interactive website to fulfill the needs of the organization.<p>
+					</div>
+				</div>
+				<div class="project-card">
+					<div class="project-image web-dev-agu"></div>
+					<div class="project-desc">
+						<h1 class="project-title">Web Developer for Art Glass Unlimited</h1>
+						<p class="project-summary">Created a website for a local business owner to replace their outdated page. The front-end was developed using mobile-first, responsive techniques in HTML, CSS and JavaScript
+																			 to ensure easy viewing on a variety of devices and browsers. The back-end uses Django to allow for quick updating of company media without the need for technical expertise.<p>
+					</div>
+				</div>
 			</div>
 			<div id="current" class="info-card">
 				<div class="info-card-data-wrapper">
 					<h1>What Am I Doing Now?</h1>
+          <p>(activity stream coming soon!)</p>
 				</div>
 			</div>
-			<div id="contact" class="info-card">
-				<div class="info-card-data-wrapper">
-					<h1>Contact Information</h1>
+			</div>
+			<div class="side-well-wrapper">
+				<div class="skills-side info-card">
+					<div id="card-wrapper" class="info-card-data-wrapper">
+						<h1>Skills</h1>
+						<div id="skills-wrapper">
+							<div class="skill-category">
+								<div class="skill-heading">
+									<h1>Front-End</h1>
+								</div>
+								<div class="skill-list">
+									<p>HTML</p>
+									<p>XML</p>
+									<p>CSS</p>
+									<p>Sass</p>
+									<p>Bootstrap</p>
+									<p>JavaScript</p>
+									<p>jQuery</p>
+								</div>
+							</div>
+							<div class="skill-category">
+								<div class="skill-heading">
+									<h1>Back-End</h1>
+								</div>
+								<div class="skill-list">
+									<p>Python</p>
+									<p>Django</p>
+									<p>PostgreSQL</p>
+									<p>MySQL</p>
+									<p>Java</p>
+									<p>C++</p>
+								</div>
+							</div>
+							<div class="skill-category">
+								<div class="skill-heading">
+									<h1>Tools</h1>
+								</div>
+								<div class="skill-list">
+									<p>Git</p>
+									<p>Linux</p>
+									<p>CLI</p>
+									<p>Vagrant</p>
+									<p>Visual Studio</p>
+									<p>Android Studio</p>
+									<p>Test Driven Development</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="octocat-frame info-card">
+					<a href="https://github.com/rds6y9"><img src="img/small_jetpacktocat.png"/></a>
 				</div>
 			</div>
 		</div>
+
 
 		<div id="footer">
 			<p>Handcrafted by Ryan Stoughton @ 2017</p>

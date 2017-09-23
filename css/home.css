@@ -177,7 +177,7 @@ html {
       #footer ul li a {
         color: #FFFFFC;
         text-decoration: none;
-        padding: 10px 25px; }
+        padding: 10px 10px; }
     #footer ul li:hover {
       transform: scale(1.2); }
 

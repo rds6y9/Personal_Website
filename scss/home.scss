@@ -253,7 +253,8 @@ html {
 
 #footer {
 	width: 100%;
-	height: $footer-height;
+	min-height: $footer-height;
+	padding-bottom: 20px;
 	text-align: center;
 	font-family: $font-stack;
 	font-size: 0.9em;
@@ -263,6 +264,26 @@ html {
 
 	p {
 		line-height: $footer-height;
+	}
+
+	ul {
+		list-style: none;
+		padding-top: 20px;
+
+		li {
+			display: inline-block;
+			transition: transform .2s ease-in-out;
+
+			a {
+				color: $white;
+				text-decoration: none;
+				padding: 10px 25px;
+			}
+		}
+
+		li:hover {
+			transform: scale(1.2);
+		}
 	}
 }
 

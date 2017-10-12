@@ -2,23 +2,20 @@ html {
   background-color: #D9D9D9 !important; }
 
 #header {
+  position: absolute;
   width: 100%;
   min-height: 300px;
-  padding: 20px 0px;
-  background-color: #3d3a3D;
-  overflow: hidden; }
+  background-image: url("../img/dylans_background.jpg");
+  background-position: center;
+  overflow: hidden;
+  z-index: -1; }
   #header #content-wrapper {
     width: 100%;
     height: 100%;
     text-align: center;
     color: #FFFFFC; }
-    #header #content-wrapper img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background-color: #FFFFFC; }
     #header #content-wrapper #descriptors {
-      padding-top: 20px; }
+      margin-top: 90px; }
       #header #content-wrapper #descriptors h1 {
         font-family: "Ubuntu", sans-serif;
         font-size: 2.5em;
@@ -57,6 +54,9 @@ html {
               background-color: #29538F; }
             #header #content-wrapper #descriptors #media-links ul li .fa-file-o {
               background-color: #157F1F; }
+
+.header-placeholder {
+  height: 300px; }
 
 .portfolio {
   max-width: 1300px;
@@ -141,6 +141,10 @@ html {
     width: 30%;
     min-height: 100px;
     float: right; }
+
+.portfolio-wrapper {
+  width: 100%;
+  background-color: #D9D9D9; }
 
 .info-card {
   max-width: 100%;

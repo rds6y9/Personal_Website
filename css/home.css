@@ -125,6 +125,11 @@ html {
         background-position: center;
         background-size: fit;
         background-repeat: no-repeat; }
+      .portfolio .main-well-wrapper #projects-experience .project-card .hackathon-winner {
+   	background-image: url("../img/prize.png");
+	background-position: center;
+	background-size: fit;
+	background-repeat: no-repeat; }
       .portfolio .main-well-wrapper #projects-experience .project-card .project-desc {
         width: 100%;
         min-height: 20px;
